@@ -1,0 +1,288 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
+    display:block;
+}
+
+/* ********************STICKY FOOTER************** */
+.site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.site-content {
+  flex: 1;
+}
+/* ***************END STICKY FOOTER************** */
+
+body {
+  font-family: "proxima-nova", sans-serif;
+}
+
+h1 {
+  font-family: "sketchnote-square", sans-serif;
+  color: #436ab3;
+}
+
+header {
+  padding: 4%;
+}
+
+.hamburger{
+  background:none;
+  position:absolute;
+  top: 65px;
+  right:60px;
+  line-height:45px;
+  padding:5px 15px 0px 15px;
+  color:#999;
+  border:0;
+  font-size:3.4em;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+.cross{
+  background:none;
+  position:absolute;
+  top:65px;
+  right:60px;
+  padding:7px 15px 0px 15px;
+  color:#999;
+  border:0;
+  font-size:6em;
+  line-height:65px;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+.menu{z-index:1000000; font-weight:bold; font-size:0.8em; width:100%; background:#f1f1f1;  position:absolute; text-align:center; font-size:12px;}
+.menu ul {margin: 0; padding: 0; list-style-type: none; list-style-image: none;}
+.menu li {display: block;   padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
+.menu li:hover{display: block;    background:#ffffff; padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
+.menu ul li a { text-decoration:none;  margin: 0px; color:#666;}
+.menu ul li a:hover {  color: #666; text-decoration:none;}
+.menu a{text-decoration:none; color:#666;}
+.menu a:hover{text-decoration:none; color:#666;}
+
+.hero-image {
+  display: block;
+  margin: auto;
+  width: 80%;
+}
+
+section h1 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+ article p {
+ 	  margin: 1% 18%;
+}
+
+.about-flex p {
+  margin: 1% 18%;
+}
+
+.home-images {
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.color-img {
+	width: 100%;
+}
+
+.about-flex {
+  display: flex;
+}
+
+.about-flex h2 {
+  text-align: center;
+}
+
+.aside-flex {
+	background-color: #67C7C3;
+  padding: 3%;
+}
+
+.aside-flex h2 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+aside figure {
+	text-align: center;
+  width: 100%;
+}
+
+aside figure img {
+	width: 100%;
+	max-width: 430px;
+}
+
+figcaption {
+  padding: 1% 0% 5% 0;
+}
+
+.adopt-section {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.adopt-div {
+	width: 27%;
+	text-align: center;
+}
+
+.adopt figure {
+	width: 100%;
+}
+
+footer {
+  background-color: #1D78BE;
+  padding: 3% 3% 4%;
+}
+
+footer ul li {
+  display: inline-block;
+}
+
+.fa {
+ padding: 5px;
+ font-size: 30px;
+ text-align: center;
+ text-decoration: none;
+ margin: 7px 4px;
+}
+
+.fa:hover {
+   opacity: 0.7;
+   color: #67C7C3;
+}
+
+.fa-facebook {
+ color: black;
+}
+
+.fa-twitter {
+ color: black;
+}
+
+.fa-instagram {
+ color: black;
+}
+
+
+@media (max-width: 1000px) {
+  .desktop-nav {
+    display: none;
+    width: 100%;
+    text-align: right;
+  }
+}
+
+@media (max-width: 500px) {
+  .logo {
+    padding: 150px 0px 25px;
+  }
+}
+
+
+@media (min-width: 600px) {
+	footer {
+		display:flex;
+		justify-content: space-between;
+	}
+
+@media (min-width: 740px){
+  section h1 {
+    text-align: center;
+    font-size: 5rem;
+  }
+}
+
+@media (min-width: 850px) {
+	.aside-flex aside {
+		display: flex;
+	}
+
+	.aside-flex aside figure {
+		width: 50%;
+	}
+
+	.aside-flex aside div {
+		width: 50%;
+	}
+}
+
+}
+@media (min-width: 1000px) {
+
+	.hamburger, .cross, .menu {
+		display: none;
+	}
+
+	header {
+		display: flex;
+		justify-content: space-between;
+	}
+
+
+	.logo {
+		width: 30%;
+	}
+
+	.desktop-nav {
+		margin: auto 0;
+		width: 70%;
+	}
+
+  .desktop-nav ul {
+		list-style-type: none;
+		text-align: right;
+	}
+
+	.desktop-nav ul li{
+    display: inline;
+		padding: 0 4%;
+
+	}
+}
+
+@media (min-width: 1225px) {
+	.adopt-section {
+		display: flex;
+		flex-wrap: wrap;
+
+		width: 1200px;
+	}
+
+	.adopt-section h1 {
+		padding: 40px 0;
+	}
+
+.adopt-div {
+	padding: 2% 20px;
+	}
+}
+
+.adopt-div h2 {
+	padding: 5% 0;
+}
+
+@media (min-width: 1450px) {
+	.color-img {
+		display: flex;
+		width: 560px;
+	}
+}
