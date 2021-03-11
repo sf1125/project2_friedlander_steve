@@ -183,6 +183,16 @@ footer ul li {
 }
 
 
+@media (max-width: 1225px) {
+	.adopt-div {
+		width: 75%;
+	}
+}
+
+.adopt-div p {
+	padding: 0 2% 10%;
+}
+
 @media (max-width: 1000px) {
   .desktop-nav {
     display: none;
