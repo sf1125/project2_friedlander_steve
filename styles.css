@@ -84,7 +84,7 @@ section h1 {
 }
 
  article p {
- 	  margin: 1% 18%;
+ 	  margin: 2% 18% 4%;
 }
 
 .about-flex p {
@@ -99,6 +99,10 @@ section h1 {
 }
 
 .color-img {
+	width: 100%;
+}
+
+.color-img img {
 	width: 100%;
 }
 
@@ -135,17 +139,37 @@ figcaption {
 }
 
 .adopt-section {
+	display: flex;
+	flex-wrap: wrap;
 	max-width: 1200px;
 	margin: 0 auto;
 }
 
 .adopt-div {
 	width: 27%;
+	padding: 1%;
 	text-align: center;
+	background-color: rgba(103, 199, 195, 0.2);
+	background-clip: content-box;
 }
 
 .adopt figure {
 	width: 100%;
+}
+
+.adopt-div p {
+	padding: 0 7% 7%;
+}
+
+.adopt-div figure {
+	padding: 8% 0 0;
+	}
+
+
+.hero-volunteer{
+  display: block;
+  margin: auto;
+  width: 70%;
 }
 
 footer {
@@ -183,15 +207,13 @@ footer ul li {
 }
 
 
-@media (max-width: 1225px) {
+@media (max-width: 1100px) {
 	.adopt-div {
 		width: 75%;
+		padding: 1% 5%;
 	}
 }
 
-.adopt-div p {
-	padding: 0 2% 10%;
-}
 
 @media (max-width: 1000px) {
   .desktop-nav {
@@ -213,11 +235,21 @@ footer ul li {
 		display:flex;
 		justify-content: space-between;
 	}
+	.color-img {
+		display: flex;
+		justify-content: center;
+	}
+
+	.color-img img {
+		width: 33.33333%;
+	}
+}
 
 @media (min-width: 740px){
   section h1 {
     text-align: center;
     font-size: 5rem;
+		padding-top: 3%;
   }
 }
 
@@ -235,7 +267,7 @@ footer ul li {
 	}
 }
 
-}
+
 @media (min-width: 1000px) {
 
 	.hamburger, .cross, .menu {
@@ -271,28 +303,14 @@ footer ul li {
 
 @media (min-width: 1225px) {
 	.adopt-section {
-		display: flex;
-		flex-wrap: wrap;
-
 		width: 1200px;
 	}
 
 	.adopt-section h1 {
 		padding: 40px 0;
 	}
-
-.adopt-div {
-	padding: 2% 20px;
-	}
 }
 
 .adopt-div h2 {
 	padding: 5% 0;
-}
-
-@media (min-width: 1450px) {
-	.color-img {
-		display: flex;
-		width: 560px;
-	}
 }
